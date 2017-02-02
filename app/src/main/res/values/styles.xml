@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--What is doing: App name is not visable-->
+        <!--Originaly: Theme.AppCompat.Light.DarkActionBar-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Text for the top view upper part -->
+    <style name="card_text_top_upper">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">@dimen/card_text_size_top_upper</item>
+        <item name="android:textColor">@color/greeting_text_color_up</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Text for the top view lower part -->
+    <style name="card_text_top_lower">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">@dimen/card_text_size_top_lower</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/greeting_text_color_down</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_basic</item>
+    </style>
+
+    <!-- Text for the bottom part-->
+    <style name="card_text_bottom">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">@dimen/card_text_size_bottom</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/bottom_text_color</item>
+    </style>
+    <style name="company_data">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">@dimen/card_text_size_bottom</item>
+        <item name="android:textColor">@color/bottom_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <!-- the parent is optional, as per documentation https://developer.android.com/guide/topics/ui/themes.html -->
+
+</resources>

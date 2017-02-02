@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Thank you!</string>
+
+    <!-- Accessibility names -->
+    <string name="thank_you_image">Thank you image</string>
+    <string name="accesibility_company_name">Company name</string>
+    <string name="accesibility_company_location">Company location</string>
+    <string name="accesibility_company_website">Company website</string>
+    <string name="accesibility_company_email">Company e-mail</string>
+    <string name="accesibility_company_phone">Company phone number</string>
+
+    <!-- Texts used in the app top area (portrait) -->
+    <string name="card_greeting_1">Thank you </string>
+    <string name="company_name">BankFinancial Inc.</string>
+    <string name="card_greeting_2">for the 5 years</string>
+    <string name="card_greeting_3">of collaboration!</string>
+    <string name="card_greeting_bottom_1">You have always been</string>
+    <string name="card_greeting_bottom_2">a great business partner!</string>
+
+    <!-- Texts used in the app top area (landscape) -->
+    <string name="card_greeting_1B">Thank you BankFinancial Inc.</string>
+    <string name="card_greeting_2B">for the 5 years of collaboration! </string>
+    <string name="card_greeting_3B">You have always been a great business partner! </string>
+
+    <!-- Texts used in the app bottom area -->
+    <string name="our_company_name">Software Visionaries plc.</string>
+    <string name="our_company_location">Cluj, Romania</string>
+    <string name="our_company_website">http://softvisionaries.ro</string>
+    <string name="our_company_email">svision@gmail.com</string>
+    <string name="our_company_phone">+40365123456</string>
+</resources>

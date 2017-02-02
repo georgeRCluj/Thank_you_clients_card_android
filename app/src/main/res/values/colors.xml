@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="greeting_text_color_up">#FFFFFF</color>
+    <color name="greeting_text_color_down">#FFFFFF</color>
+    <color name="bottom_layout_color">#FFFFFF</color>
+    <color name="bottom_text_color">#66A8A6</color>
+
+    <!-- <color name="greeting_text_color_bottom">#0D67BE</color> -->
+    <!-- turqoiz: #5BD1D1 darker; 94F4F4 lighter; BDF3F3 much lighter; 66A8A6 medium
+    4C89C3 medium blue -->
+</resources>
