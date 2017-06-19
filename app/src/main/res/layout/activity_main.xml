@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,126 +8,141 @@
     tools:context=".MainActivity">
 
     <!-- the screen is divided in two areas: top and bottom, weighting principle -->
-      <RelativeLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="9">
+        android:layout_weight="7">
+
         <ImageView
-            android:src="@drawable/handshake_1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:contentDescription="@string/thank_you_image"
             android:scaleType="centerCrop"
-            android:contentDescription="@string/thank_you_image" />
+            android:src="@drawable/handshake_1" />
 
         <!-- below are the 4 lines of text which go one after another vertically -->
         <TextView
             android:id="@+id/card_greeting_1"
+            style="@style/card_text_top_upper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/card_text_top_upper"
             android:layout_marginTop="@dimen/margin_basic"
             android:gravity="center_horizontal"
             android:text="@string/card_greeting_1" />
+
         <TextView
             android:id="@+id/client_name"
+            style="@style/card_text_top_upper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/card_text_top_upper"
-            android:textStyle="bold"
             android:layout_below="@id/card_greeting_1"
-            android:text="@string/company_name" />
+            android:text="@string/company_name"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/card_greeting_2"
+            style="@style/card_text_top_upper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/card_text_top_upper"
             android:layout_below="@id/client_name"
             android:text="@string/card_greeting_2" />
+
         <TextView
             android:id="@+id/card_greeting_3"
+            style="@style/card_text_top_upper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/card_text_top_upper"
             android:layout_below="@id/card_greeting_2"
             android:text="@string/card_greeting_3" />
 
-       <!-- below are the 2 texts which go in the right bottom corner of the top view -->
+        <!-- below are the 2 texts which go in the right bottom corner of the top view -->
         <TextView
             android:id="@+id/card_greeting_bottom_2"
+            style="@style/card_text_top_lower"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="@dimen/margin_medium"
-            style="@style/card_text_top_lower"
             android:text="@string/card_greeting_bottom_2" />
+
         <TextView
             android:id="@+id/card_greeting_bottom_1"
+            style="@style/card_text_top_lower"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/card_text_top_lower"
             android:layout_above="@id/card_greeting_bottom_2"
-            android:text="@string/card_greeting_bottom_1"
-            />
+            android:text="@string/card_greeting_bottom_1" />
     </RelativeLayout>
 
     <!-- this is the bottom part, weighting principle -->
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
-        android:background="@color/bottom_layout_color">
-        <TextView
-            android:id="@+id/company_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margin_bottom_text"
-            android:layout_marginTop="@dimen/margin_bottom_text"
-            style="@style/card_text_bottom"
-            android:text="@string/our_company_name"/>
-        <TextView
-            android:id="@+id/company_location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/company_name"
-            android:layout_marginLeft="@dimen/margin_basic"
-            android:layout_marginTop="@dimen/margin_bottom_text"
-            style="@style/company_data"
-            android:text="@string/our_company_location"
-            android:drawableLeft="@drawable/account_location"
-            android:drawablePadding="4dp"/>
-        <TextView
-            android:id="@+id/company_website"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/company_location"
-            android:layout_alignLeft="@id/company_location"
-            android:layout_marginTop="@dimen/margin_bottom_text"
-            style="@style/company_data"
-            android:text="@string/our_company_website"
-            android:drawableLeft="@drawable/web_png"
-            android:drawablePadding="4dp"/>
-        <TextView
-            android:id="@+id/company_email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/company_website"
-            android:layout_alignBaseline="@id/company_website"
-            android:layout_marginLeft="@dimen/margin_basic"
-            android:layout_marginTop="@dimen/margin_bottom_text"
-            style="@style/company_data"
-            android:text="@string/our_company_email"
-            android:drawableLeft="@drawable/email_png"
-            android:drawablePadding="4dp"/>
-        <TextView
-            android:id="@+id/company_phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/company_email"
-            android:layout_alignLeft="@id/company_email"
-            style="@style/company_data"
-            android:text="@string/our_company_phone"
-            android:drawableLeft="@drawable/phone_png"
-            android:drawablePadding="4dp" />
-    </RelativeLayout>
+        android:layout_weight="2">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/bottom_layout_color">
+
+            <TextView
+                android:id="@+id/company_name"
+                style="@style/card_text_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_bottom_text"
+                android:layout_marginTop="@dimen/margin_bottom_text"
+                android:text="@string/our_company_name" />
+
+            <TextView
+                android:id="@+id/company_location"
+                style="@style/company_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/company_name"
+                android:layout_marginLeft="@dimen/margin_basic"
+                android:layout_marginTop="@dimen/margin_bottom_text"
+                android:drawableLeft="@drawable/account_location"
+                android:drawablePadding="4dp"
+                android:text="@string/our_company_location" />
+
+            <TextView
+                android:id="@+id/company_website"
+                style="@style/company_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/company_location"
+                android:layout_below="@id/company_location"
+                android:layout_marginTop="@dimen/margin_bottom_text"
+                android:drawableLeft="@drawable/web_png"
+                android:drawablePadding="4dp"
+                android:text="@string/our_company_website" />
+
+            <TextView
+                android:id="@+id/company_phone"
+                style="@style/company_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/company_location"
+                android:layout_below="@id/company_website"
+                android:layout_marginTop="@dimen/margin_bottom_text"
+                android:drawableLeft="@drawable/phone_png"
+                android:drawablePadding="4dp"
+                android:text="@string/our_company_phone" />
+
+            <TextView
+                android:id="@+id/company_email"
+                style="@style/company_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/company_location"
+                android:layout_below="@id/company_phone"
+                android:layout_marginTop="@dimen/margin_bottom_text"
+                android:layout_marginBottom="@dimen/margin_bottom_text"
+                android:drawableLeft="@drawable/email_png"
+                android:drawablePadding="4dp"
+                android:text="@string/our_company_email" />
+        </RelativeLayout>
+    </ScrollView>
 </LinearLayout>

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Thank you card!.iml" filepath="$PROJECT_DIR$/Thank you card!.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thank_you_clients_card_android.iml" filepath="$PROJECT_DIR$/Thank_you_clients_card_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
